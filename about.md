@@ -1,26 +1,26 @@
 ---
 layout: page
 permalink: /about/index.html
-title: About the Theme
-tagline: Minimal Mistakes, a Jekyll Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 9-9-2013
+title: About me
+tagline: 
+tags: [about, me]
+modified: 6-11-2013
 image:
   feature: texture-feature-02.jpg
   credit: Texture Lovers
   creditlink: http://texturelovers.com
 ---
 
-Jekyll is pretty rad and figured releasing a cleaned up version of [my site](http://mademistakes.com)[^1] as a theme for others to hack and build on would be fun. So here be that theme --- I call it **Minimal Mistakes**, a responsive Jekyll theme with large featured images and solid typography. 
+我是一名程序员，和跑者。工作方面，主要供职于多文化背景的大公司，以及尝试过一次不算很成功的创业[^1]。技术上擅长Java和Objective-C语言，Python略懂。熟悉敏捷的软件开发过程和面向对象的设计原则以及模式，注重非技术能力的发展。跑步方面，目前参加过一次马拉松，成绩4小时32分16秒，比赛前会进行每个月200公里左右的练习。
 
-## Minimal Mistakes is all about:
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments. Content first --- other widget nonsense never.
-* Large feature images for posts and pages.
-* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
+会说比较流利的英语。喜欢旅行，因为工作的原因去过北欧的芬兰，以及菲律宾。个人曾到达过东南亚的越南和马来西亚。
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+## 更多信息
 
-[^1]: Since open sourcing this theme I have released a couple other Jekyll themes. My website [Made Mistakes](http://mademistakes.com) is currently using a modified version of my [So Simple Theme](http://mmistakes.github.io/so-simple-theme/).
+* 关于工作，请查看我的[LinkedIn账号](http://www.linkedin.com/profile/view?id=64375039)
+* 关于github，尚未有所建树，除了这个网站。
+* 邮箱：xuhuanze@qq.com
+
+
+[^1]: 如您对我的创业项目感兴趣，可访问[饭聚](http://fanjoin.com)，或是我创建的iOS App [饭聚](https://itunes.apple.com/cn/app/fan-ju/id662538880?l=en&mt=8).

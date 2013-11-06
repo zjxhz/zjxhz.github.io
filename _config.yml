@@ -1,20 +1,20 @@
-title:            Site Title
-tagline:          A short tagline
-description:      Describe your website.
+title:            Wayne's blog
+tagline:          Goose, goese, geese
+description:      Yet another IT guy, and a runner
 #Comment out url when working locally to resolve base urls correctly
-url:              http://your-site.com
+# url:              http://your-site.com
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  name:           Huanze Xu
+  avatar:         avatar.jpg
+  bio:            "Yet another IT guy, and a runner"
+  email:          xuhuanze@qq.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  linkedin:       
+  # twitter:        https://twitter.com/xuhuanze
+  facebook:       huanze.xu
+  github:         zjxhz
+  linkedin:       xuhuanze
   instagram:      
   lastfm:         
   tumblr:         
@@ -34,14 +34,10 @@ links:
     url: /about
   - title: Articles
     url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Shanghai
 future:      true
 pygments:    true
 markdown:    kramdown
