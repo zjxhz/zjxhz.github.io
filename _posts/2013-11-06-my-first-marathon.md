@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第一次跑全程马拉松赛
+title: 第一次跑马拉松
 description: 完成于2013年11月3日，于杭州
 category: articles
 tags: [marathon]
