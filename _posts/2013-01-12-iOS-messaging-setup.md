@@ -5,6 +5,9 @@ description: 以ejabberd为例子描述如何实现基于XMPP的聊天功能，�
 category: articles
 tags: [ejabberd, XMPP, iOS]
 ---
+**WARN: THIS POST IS INCOMPLETE AS EJABBERD WAS NOT THE TECHNOLOGY I USED LATER BUT OPENFIRE**
+
+
 Again, this is not a new topic. However, as you are here I assume you have solid understanding of iOS programming but limited knowledge of backend stuff(e.g. django/Erlang? programming, linux...), just like me. That is one reason I created this post. And another reason is that, most topics only talk about how to build up end-to-end communication from iOS client to the XMPP server but there is very limited information of how to **send push notifications to the iOS client when it goes to background** where the socket connect to the XMPP server is closed.
 
 As someone mentioned in [this post](http://news.ycombinator.com/item?id=323541), keep in mind that setting up XMPP is notrocket science, but non-trivial. Enough talk, let's get started.
@@ -35,7 +38,7 @@ add the following line
 {acl, admin, {user, "your_name", "localhost"}}.
 {% endhighlight %}
 
-Restart ejabberd and now you should be able to use web admin at: [http://localhost:5280/admin/][]
+Restart ejabberd and now you should be able to use web admin at: http://localhost:5280/admin/
 
 {% highlight css %}
 sudo /etc/init.d/ejabberd restart
