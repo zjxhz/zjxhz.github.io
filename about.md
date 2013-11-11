@@ -21,7 +21,7 @@ image:
 ## 更多信息
 
 * 关于工作，请查看我的[LinkedIn账号](http://www.linkedin.com/profile/view?id=64375039)
-* 关于github，尚未有所建树，除了这个网站。
+* github上并没有什么项目，除了这个博客是用Github Pages搭建的
 * 邮箱：xuhuanze@qq.com
 
 
