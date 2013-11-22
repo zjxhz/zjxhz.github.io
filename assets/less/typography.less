@@ -96,7 +96,7 @@ blockquote {
 	border-left: 8px solid @border-color;
 	font-family: @alt-font;
 	font-style: italic;
-	.font-rem(24);
+	.font-rem(12);
 }
 
 // Footnotes
@@ -111,11 +111,6 @@ blockquote {
 // --------------------------------------------------
 p {
 	margin: 0 0 @indent-var;
-	& + p {
-		//siblings indentation
-		text-indent: @indent-var;
-		margin-top: -(@indent-var);
-	}
 }
 
 // Code
