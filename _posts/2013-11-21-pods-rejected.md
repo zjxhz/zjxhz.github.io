@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pods-App was rejected  
-description: How I fixed the CoacoPods and Xcode 5 intergration issue
+description: How I fixed the CocoaPods and Xcode 5 intergration issue
 category: articles
 tags: [iOS, CocoaPods, Pods, rjected]
 ---
