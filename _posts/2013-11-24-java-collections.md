@@ -54,3 +54,44 @@ List是有序的，并允许重复元素，支持按照索引存取对象。Arra
 ## 线程安全
 前面所说的实现都是非线程安全的，这在一定程度上来说是好事。因为线程安全的实现会带来额外的开销，而很多时候你可能并不需要线程安全。例如Map的一个实现HashTable，虽然是线程安全的，但是效率比较低。如果你需要线程安全，另外一种方式是通过Collections.synchronizedXxx()方法来返回线程安全版本，例如Collections.synchronizedMap()返回线程安全的Map。然而如前所述，在并发量比较大的情况下，这可能会带来很大的性能开销。这个时候可以看下**java.util.concurrent**中是否有对应的类实现。这个包里的类提供了线程安全，并且在高并发时提供更好的性能。
 
+## 泛型
+说到集合，就不能不提泛型。Java SDK中的集合都加入了对泛型的支持。泛型的使用使得类型安全在编译时得到保证，所以应该被使用到新代码中。但是泛型也增加了语言的复杂性，下面列举了一些令人比较迷惑的地方。大部分例子用List（因为它比较短）
+
+### List, List\<Object\>, List\<?\>有什么区别？
+看起来好像没什么区别，不是吗？每一个List都可以容纳任何对象？
+
+先说List和List\<Object\>，确实可以容纳任何对象。区别是后者更为类型安全，为什么？想象一下类似如下程序：
+{% highlight css %}
+void unsafeAdd(List list){ 
+    list.add(new Integer(42));
+    list.add("ABC");
+}
+{% endhighlight %}
+List和List\<Object\>都可以作为参数传递到这个方法，这没什么问题。那问题是什么？问题就出在这个List可以接纳包含**任何类型**对象的集合。所以比如List\<String\>也是合法的。看出问题了吗？是的。对于List\<String\>，**list.add(new Integer(42))**会抛出异常，因为List\<String\>只接受String对象。
+
+将参数类型改成List\<Object\>就可以了吗？是的，因为：
+
+**List\<String\>不是List\<Object\>的子类**
+
+对于接受类型为List\<Object\>的参数，却并不接受类型为List\<String\>的参数。这解决了我们之前的那个问题，原因是因为后者并不是前者的子类。
+
+初看似乎有点违反直觉，但如果不这么做，就违反了一条基本的面相对象原则，即[**里氏替换原则**（Liskov Substitution principle）](http://zh.wikipedia.org/wiki/%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99)。这条原则说明，子类对象必须能够替换基类对象被使用。放到这里来讲，如果List\<String\>是List\<Object\>的子类，那么List\<String\>必须也能够被作为合法的参数可以传递到方法中。但是这么做会导致前面所说的问题，所以将List\<String\>设计成非List\<Object\>的子类是更为合理的。
+
+好吧，如果我想把一个List\<String\>对象中的所有元素添加到一个List\<Object\>中，方法的声明该怎么写呢？请参考Collection接口中的addAll方法：
+{% highlight css %}
+addAll(Collection<? extends E> c)
+{% endhighlight %}
+这里，你可以认为List\<? extends Object\>是List\<Object\>的一个子类。
+
+那么List\<?\>对象呢？正如问号所指出的，这个集合中的对象类型是未知的。你不能对其类型做任何假定，甚至不能假定其为Object。所以对于这种类型，你不能调用这个集合中任何**和泛型类型相关的方法**。比如add，remove。但是你可以调用例如**size**之类的方法。这种类型有什么用呢？如果一个方法并不关心集合中的类型，那么就可以用它。它比非泛型的集合更安全，后者可以对集合中的对象做不同的假设，而这种假设可能导致ClassCastException。下面展示了适合使用这种类型集合的方法：
+{% highlight css %}
+int numElementsInCommon(Set<?> s1, Set<?> s2) {
+       int result = 0;
+       for (Object o1 : s1)
+           if (s2.contains(o1))
+               result++;
+       return result;
+}
+{% endhighlight %}
+
+总之，Java中的泛型是一个复杂的议题。这里所描述的，只是其中的一小部分。
