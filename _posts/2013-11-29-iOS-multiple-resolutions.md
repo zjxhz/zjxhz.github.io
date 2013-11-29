@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS app何适配多种分辨率
+title: iOS app如何适配多种分辨率
 description: 简单iOS开发过程中如何适配多种分辨率，这可能是不同的设备，例如iPhone和iPad
 category: articles
 tags: [iOS, multiple, resolutions, 分辨率, 适配]
