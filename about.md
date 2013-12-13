@@ -21,8 +21,8 @@ image:
 ## 更多信息
 
 * 关于工作，请查看我的[LinkedIn账号](http://www.linkedin.com/profile/view?id=64375039)
-* github上并没有什么项目，除了这个博客是用Github Pages搭建的
 * 邮箱：xuhuanze@qq.com
-
+* 一封[推荐信]({{ site.url }}/images/reference_letter_from_dominik.pdf)
+* 本博客基于Github Pages搭建
 
 [^1]: 如您对我的创业项目感兴趣，可访问[饭聚](http://fanjoin.com)，或是我创建的iOS App [饭聚](https://itunes.apple.com/cn/app/fan-ju/id662538880?l=en&mt=8).
