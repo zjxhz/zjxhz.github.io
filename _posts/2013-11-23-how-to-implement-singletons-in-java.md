@@ -66,7 +66,7 @@ public static MyClass getInstance(){
     if (instance != null){
         return instance;
     }
-    synchronizedi(this){
+    	synchronized(MyClass.class){ 
         instance = new MyClass();
     }
     return instance;
@@ -84,7 +84,7 @@ public static MyClass getInstance(){
     if (instance != null){
         return instance;
     }
-    synchronizedi(this){
+    synchronizedi(MyClass.class){
         if(instance == null) {
             instance = new MyClass();
         }
