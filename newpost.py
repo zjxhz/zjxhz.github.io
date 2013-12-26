@@ -5,7 +5,7 @@ args=parser.parse_args()
 
 from datetime import datetime
 dt = datetime.now().strftime('%Y-%m-%d')
-file_name="_posts/%s_%s.md" % (dt, args.title)
+file_name="_posts/%s-%s.md" % (dt, args.title)
 f = open(file_name, 'w')
 f.write('---\n')
 f.write('layout: post\n')
