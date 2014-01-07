@@ -1295,6 +1295,7 @@ hr {
 }
 /* Figures and images ==================================== */
 article img {
+  padding-bottom: 20px;
   max-width: 100%;
   height: auto;
   border-width: 0;
