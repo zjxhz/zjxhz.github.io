@@ -5,7 +5,6 @@ description:
 category: articles
 tags: 
 ---
-
 福尔摩斯活跃在1900年前后，从大部分的故事中可以看出，当时的一位普通的白领，例如报社编辑，或家庭教师的周薪大约为2英镑——亦即月薪不到10英镑。
 
 
@@ -26,4 +25,4 @@ tags:
 
 谨以此文，供前途未名的迷茫青年参考。 
 
-![the man with twisted lip](images/the-man-with-twisted-lip.jpg)
+![the man with twisted lip](/images/the-man-with-twisted-lip.jpg)
