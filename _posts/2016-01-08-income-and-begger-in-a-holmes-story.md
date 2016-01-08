@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 论100年前的伦敦的白领收入并附议乞讨的职业前景 
 description: 
