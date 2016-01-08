@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 论100年前的伦敦的白领收入并附议乞讨的职业前景 
+title: 论19世纪末英国的物价和收入水平并附议乞讨的职业前景 
 description: 
 category: articles
 tags: 
