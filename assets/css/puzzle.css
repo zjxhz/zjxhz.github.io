@@ -18,7 +18,7 @@ table, th, td{
 .line-1-morning-shift {
 	margin: 2px;
 	background: LightYellow;
-    background-image: url("/images/sun.png");
+    background-image: url("sun.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -28,7 +28,7 @@ table, th, td{
 .line-2-morning-shift {
 	margin: 2px;
 	background: LightGreen;
-    background-image: url("/images/sun.png");
+    background-image: url("sun.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -38,7 +38,7 @@ table, th, td{
 .line-3-morning-shift {
 	margin: 2px;
 	background: OliveDrab;
-    background-image: url("/images/sun.png");
+    background-image: url("sun.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -48,7 +48,7 @@ table, th, td{
 .line-1-late-shift {
 	margin: 2px;
 	background: LightYellow;
-    background-image: url("/images/moon.png");
+    background-image: url("moon.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -58,7 +58,7 @@ table, th, td{
 .line-2-late-shift {
 	margin: 2px;
 	background: LightGreen;
-    background-image: url("/images/moon.png");
+    background-image: url("moon.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -68,7 +68,7 @@ table, th, td{
 .line-3-late-shift {
 	margin: 2px;
 	background: OliveDrab;
-    background-image: url("/images/moon.png");
+    background-image: url("moon.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 16px;
@@ -77,6 +77,10 @@ table, th, td{
 
 .selected {
 	border: 2px dotted black;
+}
+
+.qualified {
+	border: 2px solid green;
 }
 
 td {
