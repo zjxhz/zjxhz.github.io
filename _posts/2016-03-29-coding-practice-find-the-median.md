@@ -128,3 +128,6 @@ public class MedianFinder {
     }
 }
 ```
+
+## Find a median for an unsorted array
+As taught in the [algorithms lecture from Stanford](https://www.coursera.org/learn/algorithm-design-analysis/), to find the median, or any n-th largest number, we could use an algorithm that is similar to quick sort by partitioning the array, which could achieve liner, i.e. O(n) time complexity.
