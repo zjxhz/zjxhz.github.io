@@ -344,10 +344,16 @@ textarea {
  * Remove most spacing between table cells.
  */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 1.5em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.5em;
+
 }
+
+table, th, td{
+	border:1px solid black;
+}
+
 /* Variables and mixins ==================================== */
 /* Links ================================================= */
 /* Site wide styles (html, body, global classes) =========== */
