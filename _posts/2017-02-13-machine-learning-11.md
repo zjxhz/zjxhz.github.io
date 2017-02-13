@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 机器学习之「壹零壹壹」
-description:  地段2
+description:  地段的实际应用
 category: articles
 tags: 
 ---
