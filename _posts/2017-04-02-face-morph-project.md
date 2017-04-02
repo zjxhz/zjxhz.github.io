@@ -70,5 +70,7 @@ This will generate and display the averaged face. The averaged face will be seam
 
 # Open Issues
 * Generating face landmarks seems a bit too slow. This may be that dlib was not built using the AVX option.
+* The output image are of size 200x200 px, and is not configurable, unless you change the code.
+* Errors are seen for some faces. This might be solved by adding margins to the cropped faces. Check [get_face_chip_details method](http://dlib.net/dlib/image_transforms/interpolation_abstract.h.html#get_face_chip_details) for more details.
 
 
