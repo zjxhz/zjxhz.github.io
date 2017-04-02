@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Face Morphing Project
+title: Face Morphing Source Code
 description: This project aims to demonstrate various face morphing technics using dlib and OpenCV
 category: articles
 tags: 
