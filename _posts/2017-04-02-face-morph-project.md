@@ -69,6 +69,6 @@ After this, cropped faces and landmarks will be generated under `/path/to/images
 This will generate and display the averaged face. The averaged face will be seamlessly cloned to the face of the first person. To change this, check function `faceSwap`. Also, currently, the averaged face is of size 200x200.
 
 # Open Issues
-* Generating face landmarks seem a bit too slow. This may be that dlib was not built using the AVX option.
+* Generating face landmarks seems a bit too slow. This may be that dlib was not built using the AVX option.
 
 
