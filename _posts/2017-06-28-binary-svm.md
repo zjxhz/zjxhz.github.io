@@ -40,3 +40,58 @@ $$ \Delta_{w_j} L_i = 1 (w^T_j x_i - w^T_y x_i + 1 > 0)x_i $$
 **结果**
 
 这个算法因为本质上和之前那个并无不同，只是做了一些无损的简化，所以结果是一样的，不再赘述。这里介绍这个方法，还有一个用处，就是这个算法可以自然过渡到神经网络算法。
+
+
+**代码**
+
+```python
+class BinarySvmTrainer(Trainer):
+    def __init__(self, Xtr, ytr, max_iter=500, step_size=0.006, reg=10):
+        self.Xtr = Xtr
+        self.ytr = (ytr - 0.5) * 2 # turns 1 and 0 into 1 and -1
+        rows = self.Xtr.shape[0] + 1 # bias row
+        self.W = np.zeros(rows)
+        self.max_iter = max_iter
+        self.step_size = step_size
+        self.reg = reg
+
+    @staticmethod
+    def score(X, W):
+        return W.dot(X)
+
+    def loss(self, W):
+        scores = self.score(self.Xtr, W)
+        m = self.ytr.shape[0]
+        loss = np.sum(np.maximum(0, 1 - self.ytr * scores)) + self.reg * np.sum(self.W ** 2)
+        return loss / m
+
+    def train(self):
+        self.Xtr = self.norm(self.Xtr)
+        self.Xtr = self.add_ones(self.Xtr)
+        for i in range(self.max_iter):
+            self.gradient_descent(self.step_size)
+
+    def gradient_descent(self, alpha):
+        grad = self.gradient()
+        self.W -= alpha * grad
+
+    def gradient(self):
+        grad = np.zeros(self.W.shape)
+        m = self.Xtr.shape[1]
+        for i in range(m):
+            Xi = self.Xtr[:, i]
+            yi = self.ytr[i]
+            score_y = self.W.dot(Xi)
+            if 1 - yi * score_y > 0:
+                grad -= yi * Xi
+        grad += 2 * self.reg * self.W
+        return grad
+
+    def fit(self, Xte, yte):
+        Xte = self.norm(Xte)
+        Xte = self.add_ones(Xte)
+        h = self.score(Xte, self.W)
+        return h > 0
+```        
+
+可以看到，除了损失函数和梯度函数有所不同之外，其余实现和之前的支持向量机没有差别。
