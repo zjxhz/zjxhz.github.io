@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Week in Yunnan(Part 1 Kunming)
-description: 云南的一周，昆明部分
+description: 云南的一周，在昆明
 category: articles
 tags: 
 ---
