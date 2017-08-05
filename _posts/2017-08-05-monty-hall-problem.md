@@ -100,7 +100,7 @@ tags:
     height: 100%;
 }
 .prize {
-    width: 30%;
+    width: 25%;
     /*height: 20vw;*/
     margin: 2px;
     background-size: 75%;
