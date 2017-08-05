@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 山羊和汽车的问题
+title: 山羊和汽车
 description: 山羊还是汽车，这是个问题。
 category: articles
 tags: 
