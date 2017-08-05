@@ -102,7 +102,7 @@ tags:
 .prize {
     width: 30%;
     /*height: 20vw;*/
-    margin: 5px;
+    margin: 2px;
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
