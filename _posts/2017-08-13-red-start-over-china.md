@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 「红星照耀中国」和「斯大林排序算法」
-description: 从「斯大林排序算法」讲到「红星照耀中国」
+title: 红星照耀中国
+description: 从斯大林排序算法到中国共产党的政治主张
 category: articles
 tags: 
 ---
