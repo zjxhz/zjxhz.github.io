@@ -18,4 +18,4 @@ f.close()
 
 from subprocess import call
 call(['vim', file_name])
-print file_name + ' generated'
+print(file_name + ' generated')
