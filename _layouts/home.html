@@ -30,6 +30,8 @@
     <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
   </article>
   {% endfor %}
+
+<h4><a href="{{ site.url}}/articles">更多内容…</a></h4>
 </div><!-- /#index -->
 
 <div class="footer-wrap">
