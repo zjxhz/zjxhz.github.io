@@ -5,7 +5,7 @@ description: The mid-term essay of an online course, Buddhism and Modern Psychol
 category: articles
 tags: [Personal, Buddhism]
 ---
-The Buddha’s definition of the self, seems to be something that endures and persists over time; also, the self has full control over the aggregates that constitute a person, namely the forms(body), perceptions, feelings, emotions, and consciousness. He claims that such self does not exist because these aggregates are not impermanent, and they are not fully controlled by the self. 
+The Buddha’s definition of the self, seems to be something that endures and persists over time; also, the self has full control over the aggregates that constitute a person, namely the forms(body), perceptions, feelings, emotions, and consciousness. He claims that such self does not exist because these aggregates are impermanent, and they are not fully controlled by the self. 
 
 According to this definition, I agree that the self does not exist. 
 
