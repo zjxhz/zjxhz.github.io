@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 来美国半年 - 小孩教育
-description: 
+description: 分享带两个小孩来美国上学半年后的一些总结
 category: articles
 tags: education,USA,relocation
 ---
